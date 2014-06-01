@@ -1,0 +1,15 @@
+1. How to compile:
+
+gcc -c ./src/proxy.c -o proxy.o
+gcc -c ./src/util.c -o util.o
+gcc -c ./src/connection.c -o connection.o
+gcc proxy.o util.o connection.o -o proxy
+
+2. How to run:
+
+./proxy port_number [filter]
+
+3. Tested with:
+
+Mozilla Firefox
+cURL
